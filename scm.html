@@ -24,7 +24,7 @@ body{overflow:hidden; background:transparent; }
 <script type="text/javascript">
 (function(){
  	if(window==window.parent)
-		location.href = 'http://scmplayer.net';
+		location.href = 'https://mp.tencii.com';
 	var addEvent = function(elm, evType, fn) {
 			if(elm.addEventListener) 
 				elm.addEventListener(evType, fn);
@@ -100,7 +100,7 @@ require([
     var 
     shown = false,
     checkAd = function(){
-      if(SCM.showAd() && !shown){
+      if(SCM.showAd() && shown){
         $.getScript('http://s3.buysellads.com/ac/bsa.js');
         shown = true;
       }
